@@ -106,7 +106,7 @@ function addTodo(): void {
             Text: inputDOMElement.value,
             Checked: false
         }
-        todopoint.unshift(newtask)
+        todopoint.unshift(newtask);
         
         inputDOMElement.value = "";
 
