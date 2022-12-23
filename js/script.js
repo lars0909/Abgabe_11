@@ -65,8 +65,10 @@ function drawListToDOM() {
     }
     updateCounter();
 }
+const offen = 0;
+const notoff = 0;
 function updateCounter() {
-    counterDOMElement.innerHTML = todopoint.length + " in total";
+    counterDOMElement.innerHTML = todopoint.length + " in total, " + offen + " offen, " + notoff + " fertig";
 }
 function addTodo() {
     if (inputDOMElement.value != "") {

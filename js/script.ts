@@ -91,12 +91,13 @@ function drawListToDOM(): void {
         // Bis hier hin wurde das neue Todo "zusammengebaut", jetzt wird es in den DOM gerendert.
         todosDOMElement.appendChild(todo);
     }
-
     updateCounter();
 }
+const offen: number = 0,
+const notoff: number = 0;
 
 function updateCounter(): void {
-    counterDOMElement.innerHTML = todopoint.length + " in total";
+    counterDOMElement.innerHTML = todopoint.length + " in total, "+ offen + " offen, " + notoff + " fertig";
 }
 
 function addTodo(): void {
